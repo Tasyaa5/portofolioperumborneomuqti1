@@ -1,0 +1,149 @@
+body{
+  font-family: 'Poppins';
+}
+center h1{
+  color: black;
+}
+.fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 720;
+    padding: 0;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    border-radius: 3px;
+    box-shadow: inset;
+    background-color: rgb(255, 255, 255);
+    font-family: poppins;
+}
+.fixed-top ul li a:hover {
+  font-weight: bold;
+  background-color: rgb(177, 176, 176) ;
+  padding: 8px;
+  opacity: 1;
+  border-radius: 3px;
+}
+.table {
+  padding-top: 10rem;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: poppins;
+  }
+  
+  td, th {
+    border: px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+}
+.container-gambar{
+  display: flex;
+  align-items: center;
+}
+.pd-left{
+  padding-left: 3rem;
+}
+.judul{
+  font-family: poppins;
+}
+.row{
+  font-family: poppins;
+}
+.card-text{
+  font-family: poppins;
+}
+@media (max-width: 767px) {
+  /* Tambahkan gaya CSS untuk perangkat seluler di sini */
+  .embed-responsive-16by9 {
+      padding-bottom: 56.25%; /* Rasio aspek untuk perangkat seluler */
+  }
+
+  .embed-responsive-16by9 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+}
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.animated-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Sesuaikan dengan lebar gambar */
+  margin: 0 auto; /* Untuk menengahkan kontainer */
+}
+
+.animated-text {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  align-items: center;
+  opacity: 0;
+  animation: slideIn 1s ease-out forwards; /* forwards untuk tetap pada akhir animasi */
+  font-style: poppins;
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  filter: blur(3px);
+  margin: 0 auto; /* Untuk menengahkan gambar */
+}
+.animated-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.btn-link {
+  background-color: transparent;
+  border: none;
+  color: #6c757d; /* Warna teks abu-abu */
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #6c757d; /* Warna garis bawah abu-abu */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.btn-link:hover::after {
+  width: 100%;
+}
